@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { List } from "./Statistics.styled";
 
 function Statistics(props) {
@@ -23,5 +24,9 @@ function Statistics(props) {
     </List>
   );
 }
+
+Statistics.propTypes = {
+  props: PropTypes.objectOf(PropTypes.number),
+};
 
 export default Statistics;
